@@ -103,6 +103,10 @@ body {
 }
 
 @media(max-width: 500px) {
+  .social {
+    width: 30%;
+  }
+
   .social .image {
     height: auto;
   }
@@ -114,7 +118,7 @@ body {
   }
 
   .social {
-    width: 30%;
+    width: 40%;
   }
 
   .social .image {
@@ -133,5 +137,25 @@ body {
 
   .text {
     font-size: 40px;
+  }
+}
+
+@media(max-width: 300px) {
+  .social .image {
+    height: auto;
+  }
+}
+
+@media(max-width: 250px) {
+  body {
+    font-size: 2.5em;
+  }
+
+  .social {
+    width: 50%;
+  }
+
+  .social .image {
+    height: auto;
   }
 }
