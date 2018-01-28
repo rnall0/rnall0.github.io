@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 3.75em/1.38 Montserrat;
+  color: rgb(0, 0, 0);
+}
+
+.image {
+  display: block;
+  float: left;
+  height: auto;
+  overflow: hidden;
+}
+
+.social {
+  width: 11.6666666666%;
+  height: 51px;
+  margin: 13px auto 0;
+}
+
+.text {
+  margin: 121px auto 0;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+._container {
+  display: block;
+  float: left;
+  height: 51px;
+}
+
+._image {
+  width: 51px;
+  margin-left: -0.15319%;
+}
+
+.image-1 {
+  width: 68px;
+}
+
+.social ._container-1 {
+  width: 48.5714285714%;
+  margin-left: -0.01116%;
+}
+
+.social ._container-2 {
+  width: 36.4285714285%;
+  margin-left: 15%;
+}
+
+.text em,
+.text span,
+.text strong {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
