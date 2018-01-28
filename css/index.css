@@ -12,9 +12,9 @@ body {
 }
 
 .social {
-  width: 11.6666666666%;
+  width: 15%;
   height: 51px;
-  margin: 13px auto 0;
+  margin: 10px auto 0;
 }
 
 .text {
@@ -76,4 +76,62 @@ body {
   word-break: normal;
   word-wrap: normal;
   white-space: normal;
+}
+
+@media(max-width: 900px) {
+  .social {
+    width: 20%;
+  }
+
+  .social .image {
+    height: auto;
+  }
+}
+
+@media(max-width: 700px) {
+  body {
+    font-size: 3.75em;
+  }
+
+  .social {
+    width: 25%;
+  }
+
+  .social .image {
+    height: auto;
+  }
+}
+
+@media(max-width: 500px) {
+  .social .image {
+    height: auto;
+  }
+}
+
+@media(max-width: 400px) {
+  body {
+    font-size: 3.75em;
+  }
+
+  .social {
+    width: 30%;
+  }
+
+  .social .image {
+    height: auto;
+  }
+}
+
+@media(max-width: 350px) {
+  body {
+    font-size: 2.5em;
+  }
+
+  .social .image {
+    height: auto;
+  }
+
+  .text {
+    font-size: 40px;
+  }
 }
