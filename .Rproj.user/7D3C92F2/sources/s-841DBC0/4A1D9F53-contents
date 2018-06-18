@@ -1,0 +1,26 @@
+name: "robert-website"
+output_dir: "."
+navbar:
+  title: "rnall0.github.io"
+  left:
+    #- text: "Home"
+      #icon: fa-home
+    #  href: index.html
+    - text: "About Me"
+      href: about.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Resume"
+      href: resume.html
+  right:
+    - icon: ion-social-github
+      href: https://github.com/rnall0
+    - icon: ion-social-twitter
+      href: https://twitter.com/rnall0
+    - icon: ion-social-instagram
+      href: https://instagram.com/rnall0
+output:
+  html_document:
+    theme: flatly
+    highlight: default
+    css: styles.css
