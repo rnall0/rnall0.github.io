@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121076382-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121076382-1');
+</script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">rnall0.github.io</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">About Me</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+<li>
+  <a href="resume/resume.pdf">Resume</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/rnall0">
+    <span class="ion ion-social-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/rnall0">
+    <span class="ion ion-social-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://instagram.com/rnall0">
+    <span class="ion ion-social-instagram"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br></p>
+<center>
+<div id="the-evolution-of-geographic-thought-through-the-20th-century-cultural-landscape-to-structuralism" class="section level1">
+<h1>The Evolution of Geographic Thought Through the 20th Century: Cultural Landscape to Structuralism</h1>
+<div id="written-in-october-2012" class="section level8">
+<p>Written in October 2012</p>
+</center>
+<div id="introduction" class="section level2" style="width:864px; margin:0 auto" >
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Geographic thought has evolved over the last century and has seen several transitions in its approaches. The cultural landscape tradition evolved from the early forms of environmental determinism and possibilism, which further transitioned into traditional regional geography. Spatial science then came along as a critique of the previous traditions, and sought to make geography more scientific. The importance of human behavior and the recognition of its complexity set the stage for behavioral and humanistic geography, with subsequent structuralist and structuration approaches.</p>
+<p>The purpose of this article is to examine each tradition and approach, and performing three further tasks. These tasks are: 1) critically compare and contrast the spatial science tradition of geography with the cultural landscape and traditional regional geography approaches that preceded it; 2) critically examine how and why the behavioral geography and humanistic tradition in geography developed in the 1970’s; and 3) critically compare the development of structuralist and structurationist approaches in geography. In order to complete these tasks, a background perspective and evaluation of epistemology, methodology, idea of space, and other characteristics of each tradition will be described through examples from contemporary literature throughout the discipline of geography. From there, a discussion is a presented in order to provide context to each question sought to be answered.</p>
+</div>
+<div id="comparing-and-contrasting-cultural-landscaperegional-geography-and-spatial-science" class="section level2">
+<h2>Comparing and Contrasting Cultural Landscape/Regional Geography and Spatial Science</h2>
+<p>This section has the overall purpose of comparing and contrasting the spatial science tradition of geography with the cultural landscape and traditional geography approaches before it. In order to do this, an overall description of all three disciplines will be presented with examples, followed by comparing and contrasting them critically in a final discussion section.</p>
+<div id="cultural-landscape" class="section level4">
+<h4>1.1 Cultural Landscape</h4>
+<p>Cultural landscape stemmed from the disagreements and extensions of environmental determinism and environmental possibilism. Carl Sauer championed the cultural landscape concept through his studies, namely by his Ph.D. dissertation at the University of Chicago in the 1920’s and professorship at the University of California at Berkeley. Sauer sought to offset the environmental determinism approach because he believed that culture, as an agent in the environment, was the primary driving force in altering visible features on Earth. As a result, cultural landscape is created. Taffe (1974) provides a term in which to think about such spatial relationships: man-land relationships. Man-land relationships contend that a cultural presence over time can greatly influence the physical-nature of a landscape (Taffe, 1974). With man-land relationships in mind, Denevan (1992) presented an example, suggesting that Native Americans had largely altered their landscape, primarily through changes in vegetation and other Earth-altering techniques.</p>
+<p>With these notions, Sauer wanted to circumvent the vocabulary used by his predecessors in the school of environmental determinism. For example, Sauer shunned the word “landscape” and instead, preferred to use “region”. In his mind, the term “region” emphasized that people influence the places in which they live. The notion of cultural landscape hinges on the assumption that cultural behavior shapes the landscape. The overall objective of this tradition was to discover regions and landscapes that are unique from each other and then analyze the cultures that resided in them; hence, similarities within these regions and landscapes were not important, rather the uniqueness of them provided the research interest of this tradition.</p>
+<p>The cultural landscape tradition has certain characteristics in its epistemology and methodology that can be evaluated. The epistemological approach is subjective because interpretations about the observation must be made. This can ultimately lead to bias, where a researcher’s own situation can been impeded on a study (Graham, et al., 2010). Cultural landscape proponents sought to use idiographic and empirical methodologies. Idiographic approaches ideally use qualitative assessments, which generally seek to describe differences of kind and type in the plethora of variables studied in geography (Visser &amp; Jones III, 2010). In order to this, these phenomena must be described empirically, where the researcher’s knowledge is created through observation and no formal theoretical approach is used (Rhoads &amp; Wilson, 2010). With observations in mind, cultural landscape geographers took in extensive field surveys, in which they described their surroundings. Other forms of investigation that helped produce these descriptions largely lied in the form of historical accounts and documents, archaeology, and maps. A primary example of this is in Sauer’s article, “Barrens of Kentucky,” (1927). The idea of space in the cultural landscape tradition is mostly relative, as researchers pursued to describe the landscape in relation to other landscapes or features. Further, historical recognition has a strong presence in cultural landscape, as they see history influences and shapes culture. Sauer furthers this notion of history, where he implies a “historical geography” of the frontier regions in the western United States. Here, he focuses on vegetation, settlement patterns, and relationships of settlement and land alterations within the landscape (Sauer, 1930).</p>
+</div>
+<div id="example-of-cultural-landscape" class="section level4">
+<h4>1.2 Example of Cultural Landscape</h4>
+<p>Perhaps the best example of the cultural landscape tradition is in Denevan (1992). In this article, he presents the idea that it is a myth that scholars considered land before Europeans to be relatively undisturbed. He provides evidence from previous research that supports the claim that Native Americans had been long-before changing the landscape through “ethno-historical accounts, field surveys, and archaeology” (p. 370). Further, Denevan deduces based on physical properties of certain regions that the claim is probably true. He suspects that many areas had the chance to recover environmentally because of the decline in Native American influence. Thus, when European settlers finally stepped foot in North America, the regions had roughly a 200 year head-start in recovery. Therefore, Denevan contends that human influence on the environment was less noticeable than when the first Europeans arrived in 1492 (Denevan, 1992). With this article, the idea of space is largely relative, as the author writes about the western hemisphere.</p>
+</div>
+<div id="traditional-regional-geography" class="section level4">
+<h4>1.3 Traditional Regional Geography</h4>
+<p>The evaluation characteristics of the cultural landscape tradition are somewhat replicated by the traditional regional geography tradition, but in lies some subtle differences worth mentioning. Regional geography stems from geography research in Europe and North America in the 1930s; most notably Hartsthrone. Later on, regional geography took on many forms. Major advocates, like Mackinder, Herbertson, de la Blache, and Sauer, generally saw that humans, being an agent, had patterns in relation to occupation of space, and this could be reflected by the changes in the Earth’s surface. One difference in regional geography compared to cultural landscape is the concern for principles that could identify a region. By applying these principles, researchers wanted to determine a broader type of region, like nodal, functional, or formal. Another difference was the concept of exceptionalism, where it was often discouraged in regional geography. The tradition’s belief in exceptionalism contended that geography and history were different from the other sciences, and geography only explains one part. In order to bring the disciplines together, geography explains spatial patterns, where history is explained through historical accounts of events.</p>
+</div>
+<div id="examples-of-traditional-regional-geography" class="section level4">
+<h4>1.4 Examples of Traditional Regional Geography</h4>
+<p>There are two major examples of the traditional regional geography tradition: “Cropland Concentrations in the South” by Hart (1978), and “The American Great Plains” by Mather (1972). In the first example, Hart identifies that agriculture lands in the South have been separated in “islands”, where the crops grow in small areas surrounded by woodlands instead of vast, expansive fields. These islands were more prominent with the traditional cash crops of the South, where different factors are determinants, such as land quality. With different components, like price control and land conservation movements, the islands had become more focused. Hart analyzes the related data in order to explain this. Further, he calls for a development of an index for land quality in order to assist land managers in choosing agriculture locations more efficiently. This article provides an objective approach to studying southern croplands. This research emphasizes empirical approaches, where real-world field observation and nomothetic approaches in data analysis make up the primary methods. What separates this work from cultural landscape is the elimination of any reference to cultural processes over time that may have shaped the way these farmers approach the use of “agricultural islands” in farming (Hart, 1978).</p>
+<p>A second example, “The American Great Plains” by Mather (1972), shows strong correlations with the traditional regional geography approach. In this paper, Mather began by describing how the term “Great Plains” was relatively new to describe that entire region, as it once was considered part of the “Great American Desert”. Yet, he contended that the Great Plains offer much variety in terms of physical landscape and economic opportunities. Mather set out to describe the vastness of the region, noting that that area was separated into sections, rather than being regionalized, but had common characteristics that make it a region. In this, he described the many differences in landscape, the population’s personal identity with those landscapes, and variations in openness and large cities to reflect economic sectors. However, the transit-nature of the landscape, the “cowboy complex”, and “megalophilia” offer similarities within the Great Plains. The transit-nature of the region refer to the city structure (east-to-west) and how they generally reflected the nomadic paths through the region. The “cowboy complex” and the horse serve as historical significance, through cattle drives, and the cowboy is forever situated with the Great Plains region by ways of celebrating “cowboy culture” and the idolized ranching lifestyle. Large land holdings were always a part of the Great Plains and, through the advancements in agriculture technology, this practice had largely grown. Mather concluded that these bonding characteristics represent a “strong regional pride” in the Great Plains (Mather, 1972).</p>
+<p>Mather (1972) presented evidence to his claims, like the “cowboy complex”, “megalophila”, and city-structure as a reflection of the transit-nature in the region, which is primarily based off of empirical and idiographic approaches. He observed the region through traveling and photographs, used simple, descriptive statistics and maps, and further writing and describing for the distinctive nature of the Great Plains. Further, he surmised that the structure of many cities in the Great Plains offer uniqueness from other regions, mainly in their east-to-west layout that reflect the movements of the population past and present. These examples present a primarily objective epistemology with a particular interest in identifying distinctiveness, both of which are main concerns in the traditional regional geography tradition.</p>
+</div>
+<div id="spatial-science" class="section level4">
+<h4>1.5 Spatial Science</h4>
+<p>To be simply put, spatial science is referred to as “scientific” geography. Towards the latter part of the 1950’s, an external critique of traditional regional geography began to take place. These critiques implied that extensive mathematical rigor and credibility in science would provide geographers with a better idea of how things work in the world. Spatial science had empiricism, rationalism, and positivism dominate its methodologies. Assessments based from a strong mathematical background would provide the accuracy desired in other scientific fields. This ultimately emphasized positivism, which contended that phenomena had to be observed and measured, particularly through the formulation of mathematical algorithms and formulas.</p>
+<p>By the middle part of the 1960’s, a more scientific geography began to dominate research, taking in the previously mentioned positivist principles. Characteristics, like distance, location, and patterns that could be measured with absolute preciseness, came to be major features and arguments for spatial science. Further, spatial science sought for causality in geography phenomena; whereas if the features being studied could not be proven mathematically, the research would not be science.</p>
+<p>Because the spatial science approach to geography sought to be more “scientific,” it is important to mention the scientific method in which spatial science geographers so strongly attempted to adhere to. This positivist-laden approach transformed geography on how it was researched academically and applied to the real-world. In the deductive, idiographic methodological approach of spatial science, a theory would first be developed based off of quantifiable data and strict observations. Next, they would develop a hypothesis, which would directly relate to explaining the nature of the phenomena being studied. Third, models were developed using rigorous mathematical algorithms. Fourth, the researchers would test these models in order to further evaluate and analyze their research questions, emphasizing repeatability in the process. Lastly, after repeated tests, a law would be developed that could explain the nature of the phenomena.</p>
+<p>In a slightly different scientific methodological approach, some spatial science geographers would use an inductive, nomothetic methodology. Here, the researchers start out with the hypothesis, develop a scientific model, test the model, apply the theory multiple times through repeated tests, then form a law. The key points to take away from these similar approaches are the repeatability of the methods over other research topics and the construction of theories. If done correctly, as spatial science geographers contended, this scientific approach then has a technical function and can be adopted throughout the science community.</p>
+</div>
+<div id="examples-of-spatial-science" class="section level4">
+<h4>1.6 Examples of Spatial Science</h4>
+<p>Michael Dacey, from the University of Washington, took on the task of formally critiquing regional geography and early spatial science approaches in 1960 by way of his mentor, Andrew Burghardt at Stanford University. Burghardt (1959) wrote an article about the locations of towns along major river systems. In this paper, he used visual map analysis and approximation of distances to determine if the spacing of the towns were dispersed, random, or grouped. Dacey (1960) then rebutted this study and analysis, suggesting that subjective conclusions were made without proper analysis techniques.</p>
+<p>In Dacey’s (1960) article, he refers to the questions asked by Burghardt (1959) about the location of river towns: “why are the larger river towns on a particular bank of a river?”, and “what spacing have these towns?” (p. 59). Dacey seeks to answer the second question, as he specifies the only way to answer this is through “isolation of significant causal factors” and “descriptions of geometric arrangement of map distribution,” which will provide an objective evaluation (p.59). Burghardt used visual analysis, which could lead to making “general statements about the characteristics of distribution” leads to “subjective impressions,” as mentioned before (p.59). Therefore, Dacey calls for more precise analysis by comparing multiple distributions through the reflexive nearest neighbor method. This method was derived from Clark (1956) and examines points along a line and their spacing. It further added value to the other methods, where points distributed in an area were analyzed. From this, Dacey concluded that river towns along the Mississippi are more grouped, which contradicts Burghardt’s uniformity claim of larger river towns. It should be noted that Dacey claimed to do this analysis in less than thirty minutes (i.e. his lunch break) (p.60). This article represents the formal rejection of subjectivity, where Dacey sought to prove that a study on spacing of river cities could be done objectively, removing all forms of inference, estimation, and judgments.</p>
+<p>Other forms of more quantitative approaches in the spatial science tradition began to take root soon after Dacey’s (1960) critique. Kariel (1963) focused on data from the US Census in studying migration spatial patterns in the continental United States. He used a correlation-regression analysis and an analysis thereof with combinations of residuals and various groupings for different population and employment data. This regression technique accounted for about half of the explanation of migration. Also, Morrill (1965) employed a probabilistic model of diffusion that could be used to predict approximate and general patterns of the negro-ghetto expansion. Here, Morrill concluded that migration patterns of African-Americans were interconnected with the expansion of the negro-ghettos.</p>
+<p>Hanham and Lawrence (1972) used a highly scientific approach to their study about diffusion of adoption of cremation throughout Sweden. The focus in this article lies squarely with diffusion and the function of distance. A hypothesis is stated in regards to the origin of diffusion (p. 389), and use methods of a “linearized form of the logistic function” in order to establish correlations (p. 391). The idea of space is explicitly absolute, especially when considering the exact locations of urban centers in Sweden. Further, distance calculations via airline route between the urban centers were emphasized, as they were used for independent variables in the study. This study provides a good example for the nature of spatial science. Here, Handham and Lawrence determined a hypothesis and tested it through a rigorous mathematical approach and correlation analysis. Absolute space and distance factors were also taken into account, which both are key in spatial science studies (Hanham &amp; Lawrence, 1972).</p>
+</div>
+<div id="discussion-compare-and-contrast-of-cultural-landscaperegional-geography-and-spatial-science" class="section level4">
+<h4>1.7 Discussion: Compare and Contrast of Cultural Landscape/Regional Geography and Spatial Science</h4>
+<p>The previous sections provided a background of the cultural landscape, regional geography, and spatial science traditions in geography. Examples of various articles with key components and ideas of each tradition were also mentioned. In the forefront, there are some major differences. Cultural landscape/regional geography traditions tend of focus on extremely generic principles. With this, conclusions often took on the form of some kind of inference, and a subjective claim was made. The spatial science tradition sought to come to findings objectively, which “hard science” could provide the means to do so. An example of this contention is in Dacey (1960), as mentioned above. “Hard science” also implies the positivist approaches used by spatial science geographers that exclusively employ the use of mathematical rigor and logic and strict quantitative approaches. A more qualitative approach through descriptive writings and descriptive statistics is used by cultural landscape/regional geographers. A comparison for this would be Kariel (1963) and Morrill (1965) for spatial science, and Denevan (1992) for cultural landspace/regional geography. Furthermore, spatial scientists found mathematics and statistics so important that they tended to focus more on pattern with the exclusion of human-environment relationships. On the other hand, cultural landscape/regional geographers tended to focus on process, where the human and physical environment both influenced each other and worked hand-in-hand (see Hanham &amp; Lawrence (1972) in comparison to Sauer (1963) and Denevan (1992). The cultural landscape/regional geography and spatial science traditions are perhaps mere opposites when considering their epistemologies and methodologies.</p>
+</div>
+</div>
+<div id="development-of-behavioral-and-humanistic-traditions-in-geography" class="section level2">
+<h2>Development of Behavioral and Humanistic Traditions in Geography</h2>
+<p>This section seeks to address the overall examination of the emergence of behavioral and humanistic geography in the early 1970’s. Behavioral and humanistic will be portrayed in a broad array, through descriptions and examples from past readings within these traditions. Lastly, how and why these traditions came to fruition in the early 1970’s will be explored.</p>
+<div id="behavioral-geography" class="section level4">
+<h4>2.1 Behavioral Geography</h4>
+<p>The behavioral tradition in geography had its beginnings towards the latter part of the 1960’s into the middle of the 1970’s. Many contend that it was an actual extension of spatial science, with the tradition critiquing spatial science internally through location analysis and movement of people and industries. The main critique of spatial science from the behavioral geography perspective hinged on assumptions that often restricted deeper understanding and knowledge. With behavioral geographers primarily focusing on decision-making, they did not agree with the possession of perfect information for the decision-maker. They resisted the notion that each decision made is based off of perfect knowledge and their ability to make decisions that maximize their utility and minimize cost. These critiques reflect elements borrowed from psychology, where spatial science geographers mostly borrowed concepts from the economic discipline.</p>
+<p>Whereas spatial science focused research primarily on spatial patterns with variables of area and distance, behavioral geographers sought to explain human behavior scientifically within fixed spatial contexts. Johnston (1983) points out that the works of spatial science geographers were “proving” hypotheses through insufficient empirical research. Better models were needed, which would need to rely heavily on inductive methodologies. Further, Johnston suggested that instead of assuming the behavior of people in space, an inductive approach allowed for loftier models to be used that could better explain the behavior (Johnston, 1983, p. 126). This implies that legitimate scientific studies could still be conducted through emphasizing positivism, while at the same time, being able to explain human behavior on the psychological level.</p>
+<p>An example of this suggestion is in the work of Gould and White (1974), as it provided a basis for studying human perception in the context of geography. In “Images of Places”, they looked at how people’s perception of places outside of where they live is affected with the world becoming more mobile. Gould and White conducted this research through individual surveys, interviews, and mental maps. With these methods, they drew the conclusions that perception can be very different among individuals and that distance does affect how they perceive places that are farther away. The authors also contend that the human environment determines human behavior.</p>
+<p>In “Patterns of Ignorance, Information, and Learning”, Gould and White (1974) studied college students and children in the United States, Sweden, and Nigeria and their preferences and knowledge of places as they got older. It was determined that knowledge acquisition progressed their recognition of places further from where they resided, but also that their location in relation to information space must be considered. Again, Gould and White focused on the individual level through interviews, surveys, and mental maps in order to understand the research subject’s behavior. These papers articulate the desire and ability to conduct scientific research with a positivist approach by constructing a theory and substantiated assumptions. Ultimately, they were able to bring in the psychological elements on the individual level in order to produce conclusions for behavioral geography.</p>
+</div>
+<div id="the-decision-making-loop" class="section level4">
+<h4>2.2 The Decision-Making Loop</h4>
+<p>While spatial science also had an emphasis on the scientific method, behavioral geography had a particular interest in process. From this perspective, process helped researchers understand phenomena at a much more local scale, getting to a deeper understanding of what creates a spatial pattern. This idea ultimately emphasized an understanding of a spatial decision-making process. From the decision-making theory, behavioral geographers were interested in topics of information, perceptions, preferences, and choices. These broad topics brought in questions such as: “Where to people get information from?”; “What are their mental images and perceptions of places?”; “What kind of preferences do people have that cause them to move?”; and “How to people make choices?” These questions ultimately lead to a decision made by an individual; hence “The Decision-Making Loop.” This model was used in order to cover all bases in the decision-making process and to provide insight as to why people migrate.</p>
+<p>Brown and Moore (1970) wrote an article that implicated the significance of decision-making in the spatial context. They pointed out that understanding individual decisions is becoming a key point in the comprehending the spatial context and patterns for human behavior. The reasons for this study were because aggregate level data are insufficient in explanation, and the underlying environmental conditions could provide a more succinct way of evaluating movement decisions. Migration often takes place in order to improve one’s utility, and this paper expanded on these basic behaviors by taking in the fields of sociology and psychology. The authors presented a framework of PHASE I and PHASE II in order to address future research. PHASE I involved the decision-making process for a person to move. This includes a change in place utility due to stressors, adjustments to stressors, and happiness. The terminal point of PHASE I is the decision-making process, but people could ultimately return to PHASE I by re-evaluating their decision. Further research in PHASE I could include taking into account diversity of environmental needs, identifying stressors with most response, putting the new variables in a spatial context, and thinking about the entire context of a decision. PHASE II involved coming to a decision about relocation. This included elements of evaluation of surroundings, information, utilization of information, and time as a stressor. The authors called for isolation of social, economic, and location dimensions, a basis for classifying vacancies in aggregate data, the consideration of information transfer for potential migrants, and collection of data at the household level. The framework provided by the authors has obvious holes because of its complexity (Brown &amp; Moore, 1970).</p>
+<p>Looking deeper into the decision-making loop, Brown and Moore (1970) provided an excellent example of its utilization. First, the presented framework provides “an examination of factors leading to the decision to seek a new dwellingâ€¦” (p. 2). It upholds the critique of spatial science, as spatial science contends people are rational optimizers (rationalism). The study sought to examine the complex nature of people who maximize utility but also those who do not. For example, the authors contend that the survey for data collection be designed “in which the entire context of the decisionâ€¦is taken into account” (p.4). The research focused on the individual and various decision-making factors, which brought in elements of psychology (PHASE I and PHASE II). Further, information (search behavior, p.7), perceptions (evaluation procedure, i.e. physical characteristics of neighborhood, p. 5), preferences, (evaluation procedure, p. 5), and choices (purpose of entire framework) are all implicated, just like in the decision-making loop. The framework presented seeks a process of decision-making, and has an objective and positivist (empirical) approach (Brown &amp; Moore, 1970).</p>
+<p>Brown and Moore’s (1970) work also took analysis about an individual to a more scientific level. This study greatly implicated behavioral geography and calls for future research indicated the need for deeper understanding. With this, they shunned spatial science geographers by emphasizing meaning to the individual, instead of using strict mathematical rigor to over generalize them. The authors were able to drawn in the disciplines of psychology and sociology, which would provide further knowledge to the explanation of human behavior in space. In general, seeking to better understand a deeper real-world, at the individual level, began to reflect how the geography discipline was changing (Brown &amp; Moore, 1970).</p>
+</div>
+<div id="humanistic-geography" class="section level4">
+<h4>2.3 Humanistic Geography</h4>
+<p>In the middle of the 1970’s, humanistic geography began to play a larger role in the discipline. Behavioral geography was beginning to lose its flavor because of the requirement of objectified information in the positivist approaches reducing human value. Smith (1984) defined humanistic geography as a value for action supported by ordinary experience, which could draw guidelines for its practice. Cloke et al. (1991) stated, “Entrikin (1976) describes the rise of humanistic geography as at bottom an exercise in criticizing the positivism of ‘scientific geography’” (p.71).</p>
+<p>The argument for humanistic geography was that knowledge must be acquired from the individual. Humanistic geographers felt like too much was being left to the imagination in terms of dealing with human research subjects; previous traditions primarily played a reductionist role dealing with humans due to the extensive mathematical rigor. Further, by only obtaining knowledge from the individual, there could be no such thing as “value-free” research; thus implicating vast qualitative analysis and subjectivity in the researchers’ findings. This notion points out the idea of abstraction. As Rowles (1980) addresses:</p>
+<p><em>The process of abstraction from the taken-for-granted coherence of direct experience to a formal conceptualization involves a qualitative transition in both the language and substance of knowing. Translation from the prereflective understanding of everyday life to the language of social science mirrors an operational categorization of what is in experience an undifferentiated whole.</em></p>
+<p>(Rowles, 1980, p. 69)</p>
+</div>
+<div id="examples-of-humanistic-geography" class="section level4">
+<h4>2.4 Examples of Humanistic Geography</h4>
+<p>As the humanistic tradition of geography began to turn in the 1970’s, Ley and Cybriwsky (1974) conducted a study on urban graffiti. They presented that graffiti within urban areas can be indicative of a local group’s perceptions, attitudes, and processes. Graffiti artists were presented either as loners or the representation of a group. Lone graffiti artists sought conquest through distance: they wanted to spread their “signature” across the most space, which tended to be linear with transportation routes. Gang graffiti was seen an establishment of territory, and posed information about their occupancy of space and potential conflict. The authors studied graffiti in neighborhoods of Philadelphia, where these signs showed areas of tension due to the changing social landscape.</p>
+<p>In this article, the concept of idealism is shown, which is a major function in the humanistic tradition. Idealism emphasizes “mind and spirit”, as opposed to “matter”. The realities contained in the mind and spirit offer a basis for knowledge, where true knowledge is in the mind of the beholder. With this in mind, Ley and Cybriwsky (1974) try to establish some understanding from the graffiti artists’ mind themselves. There are perspectives offered through the Cool Earl and Taki 183 interviews, specifically on the “conquest of distance” of lone artists (p. 494).</p>
+<p>In reference to the methodology for humanistic geography, Hermeneutics takes into account interpretation and their meanings, where humanistic geographers seek to understand the meaning of different things between different people. This knowledge can be created through written accounts, different objects, and biographies. With Hermeneutics in mind, Ley and Cybriwsky (1974) were attempting to uncover meaning of power and identity through objects, particularly with the graffiti art. Biographical accounts are also used through interviews from neighborhood residents about their interaction with gangs and graffiti activities (p. 495 &amp; p. 496). Beyond all of this, Ley and Cybriwsky (1970) plugged at the reasons for pursuing graffiti from the artists’ perspectives (p. 494).</p>
+<p>Another methodology in the humanistic tradition is phenomenology. Phenomenology seeks to reveal explanations behind the actions of individuals. Thus, there must be interaction with the research participants when collecting data. The primary concerns in phenomenology are reasons, motives, and intentions in relation as to why people make the decisions they do. The interaction mentioned in the previous paragraph with the research subjects reflects this, where the authors uncover answers and reasons from the people themselves. Therefore, the analyses for the methods of Hermeneutics and phenomenology are both performed qualitatively. Moreover, a sense of place is very strong in this tradition. It is interesting to note that this sense of place and reality in terms of gang turf in Ley and Cybriwsky’s study often overlap, which reflect different realities construed by multiple individuals or groups (Ley and Cybriwsky,1970; gang graffiti maps, p. 497 &amp; p. 498).</p>
+<p>Another example provided for humanistic geography is “Toward a Geography of Growing Old, by Rowles (1980), and it offered a humanistic geography study using a non-objective approach. The article emphasized understanding of human cognition as being important to the humanist perspective in geography, as emphasized with Marie (a research participant) not relocating even though her inner-city residential area had become plagued with crime. Instead, the older research subjects each had their own”geographical experience.&quot; This study involved a three-year intensive interviews and interaction process with five elderly people, in which an inductive process of deriving interpretations from these encounters took place. Geographical experience was obtained through ideas of action, orientation, feeling, and fantasy among the participants. Ultimately, each personality of the person and community context was highly variable and was shaped by their life experiences: these were indicative of their geographical experience. Moreover, ageing and reality was represented in a spatio-temporal setting. A major consideration for this study was that understanding experience must be done in its entirety before creating a theory (Rowles, 1980).</p>
+<p>An important case-in-point to note is how Rowles (1980) refers to the data in this study:</p>
+<p><em>“Data-gathering in a formal sense was limited. Instead, through inter-subjective encounter, I sought immersion within a participants’ life world and to learn through ‘creative dialogue’ in a process of mutual discovery” (p.57).</em></p>
+<p>From this direct quote, the same important concepts in humanistic geography are taken away; idealism, hermeneutics, and phenomenology. To bring in idealism, Rowles sought to interact with his research participants in order to understand the relationship of relocation and how they perceive and interact with their surroundings (Rowles, 1980).</p>
+<p>Rowles (1980) also used Hermeneutics through his analysis of the research subjects’ life histories, particularly done through close interaction and interviews. He, again, offered the previously mentioned principles of phenomenology. In the study, there is high interaction with the research participants as done thorough “frequent meetings” (p.57). Reasons for (or not) relocating is the key topic in the article, where Rowles also obtains personal biographies through the interaction in order to gain perspective from their point of view. The prominence of place, which is key in phenomenology is also implicated, especially through the discovery of the participants’ “geographic experience”. Finally, a major theme in this article was the criticism of general human geography though data collection:</p>
+<p><em>Understanding individual experience in all its complexity is a necessary prelude to constructing sensitive theory … The quest for understanding, through its very process- the revelation of essential themes through personal dialogue- provides an internal critique in the process of data generation. Potential for the naive stereotyping … is reduced.</em></p>
+<p>(Rowles, 1980, p. 69)</p>
+<p>This critique emphasized the need for interaction.</p>
+</div>
+<div id="discussion-how-and-why-behavioral-and-humanistic-geography-developed-in-the-1970s" class="section level4">
+<h4>2.5 Discussion: How and Why Behavioral and Humanistic Geography Developed in the 1970’s</h4>
+<p>The previous sections provided some background and examples for the behavioral and humanistic geography traditions. This was imperative in order to provide perspective between the two traditions, namely to include insights and present valuable examples. However, it must be determined in this section how and why these traditions developed. To be put simply, Golledge (2008) suggests that “behavioral research was an outcome of the Theoretical/Quantitative Revolution” (p. 243). This is primarily pinned on the problematic methods of the previously popular theoretical research in the more positivist approaches. Golledge (2008) acknowledges that many of the theories and models at this time were inflexible at best, noting that the constant and over generalized nature of these theories and models did not truly reflect the representation of reality that geographers seek. Further, research by Brian Berry and his colleagues at the University of Washington on the behavior of people in space hinted that decision-making was not always optimal. This laid the groundwork for intensive studies on consumer and market relationships at the University of Iowa. As a result of this realization, behavioral geographers sought the needs for new methodological techniques (qualitative), interdisciplinary research, different types of data, and new study designs (Golledge, 2008). Thus, a new tradition for spatial analysis was born. Cloke et al. (1991) perhaps sums up the transition to from behavioral to humanistic geography best:</p>
+<p><em>Taken together these two developments effectively founded a new corpus of interest within the discipline that became known as ‘behavioral geography’, and in retrospect it can be claimed that behavioral geography acted as something of a ‘bridge’ leading from the ‘peopleless’ landscapes of spatial science through the ‘peopled’ landscapes of humanistic geography.</em></p>
+<p>(Cloke et al, 1991, p. 67)</p>
+<p>The humanistic geography was essentially an evolution from behavioral geography, shunning the rigorous nature and discounting of people in previous scientific geography traditions. Kukartz (2008), from National Taiwan University, summarizes a chapter from Johnston and Sidaway’s book, Geography &amp; Geographers on humanistic geography. He mentions that the adoption of this tradition took some time to develop and was not fully initiated until the 1970’s, where cultural and historical geographers sought for a broader look in the discipline. Humanistic geography’s beginnings stem from the term geosophy, where an emphasis was placed on geographic knowledge that the individual holds. This term was introduced by John K. Wright in 1947. Ultimately, study trends for the academic world in the 1960’s presented more interest in the social sciences (Kukartz, 2008). It could be inferred that this is a result of the cultural movement America was going through at the time. More emphasis was being placed on civil rights among African-Americans, women, and homosexuals, where the wider acceptance of groups offered a change in American culture and society. In turn, it further implicated the important interest in groups and individuals in the realm of academia. Humanistic geography sought to explain people’s behavior, but relinquished utilizing scientific models due to the complexity of such studies. This tradition was able to provide an appreciation for human experience and interaction in space (Kuckartz, 2008). Behavioral geographers recognized that their methods could not necessarily be applied in the humanistic tradition, and humanistic geographers acknowledge to importance of proving causality scientifically. Yet, both traditions recognize the human element (Johnston, 1983).</p>
+</div>
+</div>
+<div id="development-of-structuralist-and-structurationist-approaches-in-geography" class="section level2">
+<h2>Development of Structuralist and Structurationist Approaches in Geography</h2>
+<p>The purpose of this final section is to critically compare the development of the structuralist and structuration approaches in geography. This section will first address the characteristics of each, while further emphasizing them through examples from related articles. Last, a discussion of the development of these traditions will take place.</p>
+<div id="structuralist-approaches-in-geography" class="section level4">
+<h4>3.1 Structuralist Approaches in Geography</h4>
+<p>The structuralist tradition in geography served as a radical change in the approaches for geographic studies. The tradition was a result of the discipline’s need to find clarity in the theories and methods to explain the conditions that influence the outcome of processes across space. This differs from the previous traditions in that instead of studying movement within a confined space, structuralists wanted to know the constraints in which the phenomena are situated. Questions of “Why?” and “How come?” came to the forefront, and the focus of research shifted to in what context decisions are made.</p>
+<p>There are three main structures according to the structuralist geographer: capitalism, gender, and race. Capitalism represented two types of social relationships; the worker to employer, and businesses to businesses/business to consumer. Gender focused on the social relationships between women and men, and inter-family relationships. Lastly, the race structure is centered on the shaping of decisions one makes based on the race they might be a part of. All of these implicate the notion of power, as in all structures, an individual or group will have more power than others.</p>
+<p>The Marxist wing of human geography came about in the late 1960’s, primarily as another critique of spatial science. This critique detested the limitations of spatial science and contended that constraints that influence spatial patterns should be considered in order to test the outcomes if the constraints changed. This connected new geographic perspectives to more “socially responsible” realms. It considered the social sciences whole-heartedly, and laid a basis for discussion and debate in approaches to geographic studies in the future (Cloke et al., 1991). Peet (1983) analyzed the relationship of production collectives and production classes, where the relocation of manufacturing industries in the United States was influenced by the restructuring of capitalism since 1960 using Marxist theory as a backdrop. A few concepts that Peet examined were use of space, interclass struggles, competition, spatial patterns of class struggles, and industry locations. He concluded that increasing employment correlated positively with less class struggle (Peet, 1983).</p>
+</div>
+<div id="examples-of-structuralist-approaches" class="section level4">
+<h4>3.2 Examples of Structuralist Approaches</h4>
+<p>There are two examples that show structuralist approaches in geography studies. The first is presented by Wilson (1992) in “Structural Imperatives Behind Racial Change in Birmingham, Alabama.” In this paper, Wilson showed that the capitalist phases of development have made significant shifts in the relationships of labor, technology, and other industrial organization. The author focused on the capitalist evolution of Birmingham, Alabama. He suggests the postmodern and neo-Marxist schools of thought should include race in the frameworks of “historical materialist inquiry and class politics” and his paper seeks to bring race and capitalist development into geography (p. 172). Birmingham served as a large industrial city in the early 20th Century, attracting labor and capitalists from around the country and South. Wilson contends that “racial changes and any challenge to them are best understood within the larger context of capitalist development” (p. 174). Further, capitalism implicates the economic, political, and ideological levels of social formation (p. 174). Ultimately, capitalists used racism as a way to intensify the labor process and have political domination (p. 175). The movement of the south towards industrialization was lagging, due in part to the transition from slavery, the exploitation of cheap labor on farms, and then to industry. Southern capitalists shunned technological development to preserve this. A populist movement made up both whites and blacks was in progress to form a racial independent working class in the 1890’s. However, this was blocked by southern industrialists. The “racial question” was used in order to lower wages and instill fear of lost jobs among white workers, which in turn created more racial tension. African-Americans who had jobs were relegated to unskilled labor without opportunity for promotion even towards the Fordism movement. Segregation was further exacerbated by zoning laws influenced by industrial ties to real estate. African-Americans were unable to buy or build houses in residential areas. The Civil Rights movement and violence ultimately lead to a vast migration of black workers to the North. The decline of Birmingham was stemmed in the reluctance of outside businesses to invest in their city due to racial tensions (Wilson, 1998).</p>
+<p>Wilson’s (1998) article shows a social space from within the African-American community, which is contained by a constraining structure through southern society and racism in the industrial South during those time periods. The method of creating this picture is through dialetics. The dialetic methodological approach acts as an advocate to find a deeper understanding of causes that may sway decisions. Wilson generated this information through historical accounts, different media outlets, business archives, and political archives. In the end, the social situation in the South from the pre-Civil War to industrialization constrained the progress of overall quality of life for African-Americans in the industrial South.</p>
+<p>A second example for a structuralist approach in geography is with Johnson (1990): “New Patriarchical Economies in the Australian Textile Industry.” Here, Johnson studies how capitalist restructuring can change gender relations in a textile industry workplace in Australia. She wants to support the claim that “interconnections exist between restructuring capitalism and a reconstituting patriarchy” (p.1). She infuses terms like feminism, patriarchy, and sexual division of labor in order for readers to understand the contexts. She makes connections to male-dominated restructuring in the industry from the international level to the local level. In the 1980’s, Australia restructured there sluggish textile industry in order to induce profitability. In the single plant she studied, she claimed male positions were prioritized by jobs being associated with authority, technology, and physical strength. Subsequently, by adding new mechanization to a predominantly woman-occupied agency of the plant, men had taken those jobs as well. Johnson claims that all sectors of the operating mill are disproportionately men, which are further influenced by national law and company policies Lastly, she insists that neglecting patriarchal economies in the study of restructuring are flawed because of the ignorance of “vital interconnections between the restructuring of capital and the reconstruction of patriarchy” (p.27).</p>
+<p>Johnson (1990) illustrated a structure of division of labor from within the work space. This division was a result of the restructuring of the capitalist industry, and the subsequent workplace setting was plagued with sexist points-of-view that provided constraints for the woman worker inside the textile plant. There is much evidence of strong emotion throughout the article; hence it being very subjective through her personal interest and strong interjections of opinion. Again, some of the knowledge from within the workplace is created through dialetics, where extensive interviews with workers in the textile plant take place.</p>
+</div>
+<div id="structurationist-approaches-in-geography" class="section level4">
+<h4>3.3 Structurationist Approaches in Geography</h4>
+<p>The structurationist movement acted as a more sophisticated approach to human geography by considering the structure and agencies that people’s lives are in interaction with daily. From this point, Marxist and humanist geographers began to rework their frameworks and a deeper understanding of the human and social position was researched (Cloke et al., 1991). There started to be some discontentment in the structure and agent relationship among human geographers. New ideas were beginning to suggest that structures act as parameters in which the agent lives, but the agent is free to move at his or her own will. Thus, the structuration argument hinges on structure not only being a constraint, but could also act as an enabler. This is the major difference between the structuralist and structurationist approaches.</p>
+</div>
+<div id="example-of-structurationist-approach" class="section level4">
+<h4>3.4 Example of Structurationist Approach</h4>
+<p>Pred (1990) wrote about structurationism in a chapter of Making Histories and Constructing Human Geographies entitled “Biography Formation, Knowledge Acquisition, and the Growth and Transformation of Cities During the Late Mercantile Period: The Case of Boston, 1783 - 1812.” This chapter presents the question of “how is human agency to be inserted into any interpretation of the growth or stagnation of port cities during the late mercantile period without denying the critical role of constraining and enabling structural conditions?” (p.41). The author seeks to answer the question through an overview of Braudel’s works, parts of a theory of local and regional alteration, and an example of knowledge acquisition, biography creation, and growth of Boston. He creates a spatio-temporal map to depict social contact of a typical Boston merchant with people he comes across during his movement. During this contact, the merchant gains knowledge and develops life values, only to contribute to the merchant system of the city in the future (Pred, 1990).</p>
+</div>
+<div id="discussion-development-of-structuralist-and-structurationist-approaches-in-geography" class="section level4">
+<h4>3.5 Discussion: Development of Structuralist and Structurationist Approaches in Geography</h4>
+<p>The previous sections of overviews of each tradition perhaps hinted at their development. The structuralist tradition sought to find a more clear way of creating the theories and methods to give explanation of the factors that influence the outcome of processes across space. This brought about a more radical wing in geography: Marxism. Marxist geography in America perhaps originated from the conditions of culture and society during the 1960’s and 1970’s. This was mostly a reaction to the political and government upheaval during the Vietnam War and the Civil Rights Movement. Thus, more criticism came against the American working system and capitalism in general. The structuralist approach in geography sought to think about the disproportionate forces of government spatially in an attempt to solve these problems- or at least understand the underlying structures and conditions (Cloke et al., 1991). The development of structuration approaches were more of a reworking from within the Marxist geography community. They sought for a deeper meaning of structure and agencies, not only just as a constraint, but also an enabler for progress (Cloke et al., 1991).</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>This article went through the task of critically examining cultural landscape, traditional regional geography, spatial science, behavioral and humanistic geography, and the structuralist and structurationist approaches. It can be found that the cultural landscape/traditional regional geography traditions differ greatly from spatial science, particularly through their epistemologies and methodologies. Next, it can be recognized that more interest in the social sciences as a rebellion against the Quantitative Revolution created a shift towards more human importance in geography. Further critiques suggested that spatial science discounted people by treating them as numbers, and there needed to be a deeper understanding of the decision-making process. Lastly, the cultural movement in America in the 1960’s and 1970’s led to more radical approaches in geography. These approaches also considered the structures by which people are bound and how it affects decision-making and the pursuit of progress in society.</p>
+<p>The previously mentioned traditions and approaches in geography from within this article show the evolution of thinking in the discipline. With the recent advancements in technology over the last two decades, one can only imagine that geography will still continue to go through paradigm shifts.</p>
+</div>
+<div id="references" class="section level2">
+<h2>References</h2>
+<p>Brown, L. and Moore, E. (1970). The Intra-Urban Migration Process: A Perspective. Geografiska Annaler, 52 (1): 1 - 13.</p>
+<p>Burghardt, A. F. (1959). The Location of River Towns in the Central Lowland of the United States. Annals of the Association of American Geographers, 49 (3): 305 - 323.</p>
+<p>Clark, P. J. (1956). Grouping in Spatial Distributions. Science, 123: 123 - 125.</p>
+<p>Cloke, P., Philo, C. and Sadler, D. (1991). Changing Times and the Development of Marxist Approaches to Human Geography Since the Late 1960s: Still Radical and Relevant and Radical After All the Years. Ch. 2 In: Approaching human geography: an introduction to contemporary theoretical debates. New York: Guilford Press, pp. 28 - 56.</p>
+<p>Cloke, P, Philo, C. and Sadler, D. (1991). â€˜Peopling’ Human Geography and the Development of Humanistic Approaches. Ch 3 In: Approaching human geography: an introduction to contemporary theoretical debates. City: Guilford Press, pp. 57 - 92.</p>
+<p>Cloke, P., Philo, C. and Sadler, D. (1991). Structuration Theory: Anthony Giddens and the Bringing Together of Structure and Agency. Ch. 4 In: Approaching human geography: an introduction to contemporary theoretical debates. New York: Guilford Press, pp. 93 - 131.</p>
+<p>Dacey, M.F. (1960). The Spacing of River Towns. Annals of the Association of American Geographers, 50 (1): 59 - 61.</p>
+<p>Denevan, W. (1992). The Pristine Myth: the landscape of the Americas in 1492. Annals of the Association of American Geographers, 82(3): 369 - 385.</p>
+<p>Golledge, R. G. (2008). Behavioral Geography and the Theoretical/Quantitative Revolution. Geographical Analysis. 40: 239 - 257.</p>
+<p>Gould, P and White, R. (1974). The Images of Places. Ch. 1. In: Mental Maps. Middlesex (UK): Pelican Books Publishers, pp. 15 - 47.</p>
+<p>Gould, P and White, R. (1974). Patterns of Ignorance, Information, and Learning. Ch. 5. In: Mental Maps. Middlesex (UK): Pelican Books Publishers, pp. 119 - 156.</p>
+<p>Graham, I., Shaw, R., Dixon, D. P., Jones III, J. P. (2010). Theorizing Our World. Ch. 2 In: B. Gomez, J. P. Jones III (Eds). Research Methods in Geography. West Sussex (UK): Wiley-Blackwell, pp. 9 - 25.</p>
+<p>Hart, J.F. (1978). Cropland Concentrations in the South. Annals of the Association of American Geographers 68(4): 505 - 517.</p>
+<p>Hanham, R. and Brown, L. (1972). Diffusion Through an Urban System: The Testing of Related Hypothesis. Tijschrift Voor Econ. En Soc. Geografie, 63: 388 - 393.</p>
+<p>Johnson, L. (1990). New Patriarchal Economies in the Australian Textile Industry. Antipode, 22: 1 - 32.</p>
+<p>Johnston, R.J. (1983). Behavioral Geography and Alternatives to Positivism. Ch. 3 In: R.J. Johnston. Geography and Geographers. London: Arnold Publishers, pp. 125 - 158.</p>
+<p>Kariel, H.G. (1963). Selected Factors Areally Associated with Population Growth Due to Net Migration. Annals of the Association of American Geographers, 53 (2): 210 - 223.</p>
+<p>Kukartz, J. (2008). Humanistic Geography. Retrieved from <a href="http://www.doubleyoudigital.nl/documents/Humanistic%20Geography.pdf">http://www.doubleyoudigital.nl/documents/Humanistic%20Geography.pdf</a>.</p>
+<p>Ley, D. and R. Cybriwsky. (1974). Urban Graffiti as Territorial Markers. Annals of the Association of American Geographers, 64 (4): 491 - 505.</p>
+<p>Mather, E.C. (1972). The American Great Plains. Annals of the Association of American Geographers, 62(2): 237 - 257.</p>
+<p>Morrill, R.L. (1965). The Negro Ghetto: Problems and Alternatives. Geographical Review, 55 (3): 339 - 361.</p>
+<p>Peet, R. (1983). Relations of Production and the Relocation of United States Manufacturing Industry Since 1960. Economic Geography, 59 (2): 112 - 143.</p>
+<p>Pred. A. (1990). Biography Formation, Knowledge Acquisition, and the Growth and transformation of Cities during the Late Mercantile Period: the Case of Boston, 1783 - 1812. In: A. Pred (Ed). Making Histories and Constructing Human Geographies. City: Westview Press, pp. 41 - 75.</p>
+<p>Rhoads, B. L. and Wilson, D. (2010). Observing Our World. Ch. 3 In: B. Gomez, J. P. Jones III (Eds). Research Methods in Geography. West Sussex (UK): Wiley-Blackwell, pp. 26 - 40.</p>
+<p>Rowles, G. (1980). Towards a Geography of Growing Old. In: Buttimer, A. and D. Seaman (ed). The Human Experience of Space and Place. City: Palgrave Macmillan Publishers, pp. 55 - 72.</p>
+<p>Sauer, C. (1927). The Barrens of Kentucky. Reproduced in J. Leighly (ed.). 1963. Land and life: A selection from the writings of Carl Ortwin Sauer. Berkeley: University of California Press, pp. 23 - 31.</p>
+<p>Sauer, C. (1930). Historical Geography and the Western Frontier. Reproduced in J. Leighly (ed.). 1963. Land and life: A selection from the writings of Carl Ortwin Sauer. Berkeley: University of California Press, pp. 45 - 52.</p>
+<p>Smith, S.J. (1984). Practicing Humanistic Geography. Annals of the Association of American Geographers, 74 (3): 353 - 374.</p>
+<p>Taaffe, E.J. (1974). The Spatial View in Context. Annals of the Association of American Geographers, 64 (1): 1 - 16.</p>
+<p>Visser, S. and Jones III, J.P. (2010). Measurement and Interpretation. Ch. 4 In: B. Gomez, J. P. Jones III (Eds). Research Methods in Geography. West Sussex (UK): Wiley-Blackwell, pp. 41 - 59.</p>
+<p>Wilson, B.M. (1992). Structural Imperatives Behind Racial Change in Birmingham, Alabama. Antipode, 24(3): 171 - 202.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
