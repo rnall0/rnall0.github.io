@@ -32,7 +32,7 @@ Florence, AL <br>
   <li>Write for Company blog about technical achievements and academic pursuits</li>
 </ul>
 
-[SICS Consultants, LLC](sics.com) <br>
+[SICS Consultants, LLC](www.sics.com) <br>
 Florence, AL <br>
 2014 - present <br>
 *Data Scientist / GIS Manager* <br>
