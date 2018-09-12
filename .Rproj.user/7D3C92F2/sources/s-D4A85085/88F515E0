@@ -5,17 +5,17 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "562359963",
     "id" : "88F515E0",
-    "lastKnownWriteTime" : 1532179427,
-    "last_content_update" : 1532179427473,
+    "lastKnownWriteTime" : 1536751105,
+    "last_content_update" : 1536751105511,
     "path" : "C:/Projects/GitHub/rnall0.github.io/index.Rmd",
     "project_path" : "index.Rmd",
     "properties" : {
-        "cursorPosition" : "14,0",
-        "scrollLine" : "0"
+        "cursorPosition" : "11,25",
+        "scrollLine" : "5"
     },
-    "relative_order" : 3,
+    "relative_order" : 4,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_markdown"

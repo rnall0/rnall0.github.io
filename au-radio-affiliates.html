@@ -230,57 +230,41 @@ $(document).ready(function () {
 </div>
 
 
-<p><br></p>
-<p><br></p>
-<p><br></p>
+<br>
 <center>
 <div id="a-web-map-for-auburn-university-sports-radio-affiliates" class="section level1">
-<h1><a href="au-radio-affiliates.html">A Web Map for Auburn University Sports Radio Affiliates</a></h1>
-<div id="september-10-2018" class="section level6">
-<h6>September 10, 2018</h6>
-<p><br></p>
-<p><br></p>
-</div>
-</div>
-<div id="things-you-can-do-with-nside" class="section level1">
-<h1><a href="https://news.nside.io/5-things-you-can-do-with-nside-e923659fc092">5 Things You Can Do With nSide</a></h1>
-<div id="june-30-2017" class="section level6">
-<h6>June 30, 2017</h6>
-<p><br></p>
-<p><br></p>
-</div>
-</div>
-<div id="would-you-know-where-the-closest-aed-is-located-in-the-case-of-an-emergency" class="section level1">
-<h1><a href="https://news.nside.io/would-you-know-where-the-closest-aed-is-located-in-the-case-of-an-emergency-966d2d17d402">Would you know where the closest AED is located in the case of an emergency?</a></h1>
-<div id="april-20-2017" class="section level6">
-<h6>April 20, 2017</h6>
-<p><br></p>
-<p><br></p>
-</div>
-</div>
-<div id="the-evolution-of-geographic-thought-through-the-20th-century-cultural-landscape-to-structuralism" class="section level1">
-<h1><a href="evolutionGeog.html">The Evolution of Geographic Thought Through the 20th Century: Cultural Landscape to Structuralism</a></h1>
-<div id="april-4-2017" class="section level6">
-<h6>April 4, 2017</h6>
-<p><br></p>
-<p><br></p>
-</div>
-</div>
-<div id="analyzing-lyrics-in-r-a-mixed-method-approach" class="section level1">
-<h1><a href="https://medium.com/@rmnau0/mixed-method-approach-analyzing-lyrics-in-r-5eb42297dcac">Analyzing Lyrics in R: A Mixed-Method Approach</a></h1>
-<div id="april-1-2017" class="section level6">
-<h6>April 1, 2017</h6>
-<p><br></p>
-<p><br></p>
-</div>
-</div>
-<div id="mapping-the-auburn-spring-football-roster-using-r" class="section level1">
-<h1><a href="https://medium.com/@rmnau0/mapping-the-auburn-spring-football-roster-using-r-f7b7747d2af">Mapping the Auburn Spring Football Roster using R</a></h1>
-<div id="march-19-2017" class="section level6">
-<h6>March 19, 2017</h6>
-<p><br></p>
-<p><br></p>
+<h1>A Web Map for Auburn University Sports Radio Affiliates</h1>
+<div id="au-radio-affiliates" class="section level8">
+<p>au-radio-affiliates</p>
 </center>
+<div id="body" class="section level2" style="width:864px; margin:0 auto" >
+
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>The purpose of this Shiny application is to visualize Auburn University sports radio affiliate locations. This is particularly valuable for one looking to find a radio station carrying an Auburn University athletic event if they are traveling and/or unfamiliar with local radio stations.</p>
+<p><a href="https://rnall.shinyapps.io/au-radio-affiliates/">https://rnall.shinyapps.io/au-radio-affiliates</a></p>
+</div>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p>The official <a href="https://auburntigers.com/sports/2018/6/15/auburn-sports-network-listen.aspx">Auburn Sports Network - Listen/Affiliates</a> page was used as the “authoritative” source to scrape call sign tower lat/lons from <a href="https://radio-locator.com">radio-locator.com</a>. The <a href="https://radio-locator.com">radio-locator.com</a> page has daily request limits, so be aware.</p>
+</div>
+<div id="how-to-use" class="section level2">
+<h2>How to use</h2>
+<p>Each location on the map contains information about what city the tower is in, call letters, and frequency, while also stating if that affiliate broadcasts an Auburn Sports Today segement, the Tiger Talk radio show, football games, mens basketball games, and/or baseball games. Click on a location to see this information in the html pop-up. The layer panel is also collapsed in the top left, and layers distinguishing those between AM and FM frequencies can be turned on and off.</p>
+</div>
+<div id="notes" class="section level2">
+<h2>Notes</h2>
+<p>There are some discrepancies between call signs, locations, and cities from the various sources. For example, the official Auburn Sports Network listing shows WSBM 1340 AM in Florence, AL as the only affiliate in the area, but this is in fact duplicated with W250BY 97.9 FM in Florence. Because I know this, I corrected it.</p>
+<p>I could not find information on WHAL in Columbus, GA.</p>
+<p>And others.</p>
+</div>
+<div id="sources" class="section level2">
+<h2>Sources</h2>
+<ul>
+<li><a href="https://auburntigers.com/sports/2018/6/15/auburn-sports-network-listen.aspx">Auburn Sports Network - Listen/Affiliates</a></li>
+<li><a href="https://radio-locator.com">radio-locator.com</a></li>
+</ul>
 </div>
 </div>
 
