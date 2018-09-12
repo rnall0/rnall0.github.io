@@ -1,10 +1,12 @@
 <br>
 
-<center>
-# About Me
-</center>
+<br>
 
-<div id="introduction" class="section level2" style="width:864px; margin:0 auto" >
+<div id="about" class="section level2" style="width:864px; margin:0 auto" >
+
+## About Me
+
+<br>
 
 My name is Robert Nall and I am the Director of Data Management at [nSide, Inc](https://www.nside.io/) in Florence, Alabama. On the side, I also teach courses with the [University of North Alabama Department of Geography](https://una.edu/geography/). I enjoy fishing, college football, and history. 
 

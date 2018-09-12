@@ -1,0 +1,108 @@
+<br>
+
+<br>
+
+<div id="resume" class="section level2" style="width:864px; margin:0 auto" >
+
+## Resume
+
+<br>
+
+### Robert M. Nall
+rmn0001@gmail.com
+
+### Skills and Tools <br>
+<ul>
+  <li>R, QGIS, ArcGIS Desktop 10.x, ArcGIS Server 10.x, ArcGIS Online, Python, SQLServer,          MySQL, GDAL/OGR, SQLite, Global Mapper, FME, Business Analyst, Google Cloud                  Product</li>
+  <li>Experience with Linux OS, Raspberry Pi, PostgreSQL, PostGIS, MapTiler, ERDAS Imagine,        SPSS, Trimble FarmWorks</li>
+
+### Professional Experience <br>
+[nSide, Inc](https://nside.io) <br>
+Florence, AL <br>
+2015 - present <br>
+*Director of Data Management* <br>
+<ul>
+  <li>Manage GIS team through identifying scope and associated deliverables and tools              throughout project lifecycle</li>
+  <li>Ensure project deliverables are executed on-time and within budget threshold</li>
+  <li>Develop strategies to manage Customer Success Program by communicating with customers        for feedback about product and analyzing associated customer data</li>
+  <li>Author, edit, review all major sections of nSider's Community and Knowledge Base</li>
+  <li>Conduct research and development for internal data processing improvements such as           workflows, open source utilization, and analytical techniques</li>
+  <li>Quantitative analysis and data visualization for month, quarter, and year end product        reviews</li>
+  <li>Market analysis for nSide|Site and ranking of potential clients</li>
+  <li>Write for Company blog about technical achievements and academic pursuits</li>
+</ul>
+
+[SICS Consultants, LLC](https://sics.com) <br>
+Florence, AL <br>
+2014 - present <br>
+*Data Scientist / GIS Manager* <br>
+<ul>
+  <li>Oversee technical geospatial and data analysis operations</li>
+  <li>Sale of Google Imagery and value added products (file format conversions,                    reprojections, resampling, mosaicking, tiling & reindexing, spectral band                    recombination, and hosting services)</li>
+  <li>Lead, maintain, and execute Google Imagery processing jobs</li>
+  <li>Develop, build, and execute handoff of statistical models for fiber infrastructure           prediction</li>
+  <li>Develop hierarchical geoprocessing techniques for data translation in Virtual Alabama        School Safety System and Virtual Alabama</li>
+  <li>Develop and maintain scalable geocoding applications for Medicaid of Alabama and manage       Medicaid of Alabama related GIS and analytical projects</li>
+  <li>Configure and maintain ArcGIS web services for Alabama Forestry Commission and National       Weather Service</li>
+  <li>Develop geoprocessing tools for standardization and data delivery for Wiregrass E911         Consortium</li>
+  <li>Serve as internal and external contact for GIS consultation and spatial analysis</li>
+</ul>
+
+[Ag Technologies](http://www.agtechllc.com/) <br>
+Cordele, GA <br>
+2013 - 2014 <br>
+*Spatial Analyst* <br>
+<ul>
+  <li>Point of contact for internal and external clientele GIS consulting and spatial              analysis</li>
+  <li>Multivariate statistical analysis and modeling of soil data for variable rate                application</li>
+  <li>Develop custom GIS tools for automation of soil analysis</li>
+  <li>Spatial data creation, processing, and input for tractor guidance systems</li>
+  <li>Data compilation and analysis of regional agricultural markets</li>
+  <li>Cartographic production in static and web environments</li>
+  <li>Field data collection using soil electrical conductivity instrumentation and Trimble         devices</li>
+  <li>EM-38 Soil Mapping, VERIS Technologies, Trimble Yuma 2, FmX</li>
+</ul>
+
+[Cobb County Government, Community Development](https://cobbcounty.org/index.php?option=com_content&view=article&id=5811&Itemid=2155) <br>
+Marietta, GA <br>
+2010 - 2011 <br>
+*GIS Technician* <br>
+<ul>
+  <li>Design and maintenance of 2010 Census geodatabase</li>
+  <li>Spatial and descriptive statistical analysis of 2010 Census demographics within              county</li>
+  <li>Author sections of the 2010 Census Report presented to Board of Commissioners</li>
+  <li>Build footprint inventory and geodatabase creation for “Vinings Vision Plan”</li>
+  <li>Geocode county addresses for E-911 cooperation in Fire Plan development</li>
+  <li>Assign, verify, and QA/QC parcel addresses within county</li>
+  <li>Interact with county citizens to resolve requests, issues, and concerns related to           parcel addressing</li>
+  <li>Cartographic production on Planning Division studies</li>
+  <li>Attend Planning Commission meetings and presented maps of study areas via                    multimedia</li>
+</ul>
+
+### Education <br>
+[University of North Alabama](https://una.edu) <br>
+Florence, AL <br>
+2011 - 2014 <br>
+*M.S. in Geospatial Science* <br>
+<ul>
+  <li>Thesis topic: <i>Understanding Vulnerability: Optimization of a Place-based                 Vulnerability Model to Floods in Davidson County, Tennessee</i></li>
+  <li>Awards: Phi Kappa Phi Academic Honor Society</li>
+  <li>Activities: The Honor Society of Phi Kappa Phi, National Council for Geographic             Education, Alabama Geographic Alliance, UNA Geography Club, UNA Geography Department        Interview Committee</li>
+</ul>
+
+[Auburn University](https://auburn.edu) <br>
+Auburn, AL <br>
+2007 - 2010 <br>
+*B.A. in Geography* <br>
+<ul>
+  <li>Activities: Gamma Theta Upsilon International Geographic Honor Society, Eta Theta            Chapter</li>
+</ul>
+
+### Additional Activities
+<ul>
+  <li>Adjunct Instructor- University of North Alabama (Summer 2018 - Present)</li>
+  <li>President- University of North Alabama Geography Alumni Association (2016-2017)</li>
+  <li>President Elect- University of North Alabama Geography Alumni Association                   (2015-2016)</li>
+  <li>Vice President- University of North Alabama Geography Alumni Association                    (2014-2015)</li>
+  <li>Alabama Geographic Alliance GIS Day 2015- Teaching GIS to 3rd Graders using Google          MyMaps</li>
+</ul>

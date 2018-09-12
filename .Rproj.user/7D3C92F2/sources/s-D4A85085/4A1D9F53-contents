@@ -8,7 +8,7 @@ navbar:
   - text: Projects
     href: projects.html
   - text: Resume
-    href: resume/resume.pdf
+    href: resume.html
   right:
   - icon: ion-social-github
     href: https://github.com/rnall0
