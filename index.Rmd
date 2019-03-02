@@ -44,7 +44,7 @@
 
 <br>
 
-# [Mapping the Auburn Spring Football Roster using R](https://medium.com/@rmnau0/mapping-the-auburn-spring-football-roster-using-r-f7b7747d2af)
+# [Mapping the Auburn Spring Football Roster using R](https://medium.com/@rnall0/mapping-the-auburn-spring-football-roster-using-r-f7b7747d2afc)
 ###### March 19, 2017
 
 <br>
