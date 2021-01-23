@@ -1,56 +1,23 @@
+---
+title: "Robert Nall"
+image: "Robert_Nall.png"
+links:
+  - label: Twitter
+    url: "https://twitter.com/rnall0"
+  - label: GitHub
+    url: "https://github.com/rnall0"
+  - label: Goodreads
+    url: "https://www.goodreads.com/user/show/125597008-robert-nall"
+  - label: Email
+    url: "mailto:rmn0001@gmail"
+output:
+  postcards::jolla_blue
+---
+ 
+I am the Chief Data Officer at nSide - The School Safety Platform.
 
+Interested in history, statistics, margin of safety investing, college football, rocknroll, and growing gardens.
 
+BA, Geography, Auburn University 2010. 
 <br>
-
-<br>
-
-<br>
-
-<center>
-
-# [A Web Map for Auburn University Sports Radio Affiliates](au-radio-affiliates.html)
-###### September 10, 2018
-
-<br>
-
-<br>
-
-# [5 Things You Can Do With nSide](https://news.nside.io/5-things-you-can-do-with-nside-e923659fc092)
-###### June 30, 2017
-
-<br>
-
-<br>
-
-# [Would you know where the closest AED is located in the case of an emergency?](https://news.nside.io/would-you-know-where-the-closest-aed-is-located-in-the-case-of-an-emergency-966d2d17d402)
-###### April 20, 2017
-
-
-<br>
-
-<br>
-
-# [The Evolution of Geographic Thought Through the 20th Century: Cultural Landscape to Structuralism](evolutionGeog.html)
-###### April 4, 2017
-
-<br>
-
-<br>
-
-# [Analyzing Lyrics in R: A Mixed-Method Approach](https://medium.com/@rmnau0/mixed-method-approach-analyzing-lyrics-in-r-5eb42297dcac)
-###### April 1, 2017
-
-<br>
-
-<br>
-
-# [Mapping the Auburn Spring Football Roster using R](https://medium.com/@rnall0/mapping-the-auburn-spring-football-roster-using-r-f7b7747d2afc)
-###### March 19, 2017
-
-<br>
-
-<br>
-
-
-
-</center>
+MS, Geospatial Science, University of North Alabama 2014.
