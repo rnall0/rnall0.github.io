@@ -14,7 +14,7 @@ output:
   postcards::jolla_blue
 ---
  
-I am the Chief Data Officer at nSide - The School Safety Platform.
+I am the Chief Operating Officer at nSide - The School Safety Platform.
 
 Interested in history, statistics, margin of safety investing, college football, rocknroll, and growing gardens.
 
